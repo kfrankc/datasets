@@ -45,7 +45,8 @@
 			<div class="fill">
 				<img data-src="img/data.jpg">
 			</div>
-			<p>Welcome! Below you can find a list (constantly updated) of datasets used for computer vision, machine learning, deep learning training/research. Special thanks to <b><a href="http://shukla.io" target="_blank">Nishant Shukla</a></b> for suggesting this project.</p>
+			<p>Welcome! Below you can find a list (constantly updated) of datasets used for computer vision, machine learning, deep learning training/research.</p>
+			<p><b>Two paper links accompany each dataset</b>: first link is the paper for the dataset; second link is a related paper that uses the dataset. Lastly, the number corresponding with each paper shows the <b>citations made for that paper</b>. Special thanks to <b><a href="http://shukla.io" >Nishant Shukla</a></b> for suggesting this project.</p>
 		</section>
 	</div>
 	<section>
@@ -54,9 +55,9 @@
 				{{#each apidata}}
 				<div class="wow fadeIn">
 					<div class="card" id="card-{{@index}}">
-						<h3 class="card-title" style="align:left"><b><a href="{{website}}" target="_blank">{{name}}</a></b><span style="float: right;">{{usage}}</span></h3>
-						<h5><a href="{{paper1}}" target="_blank">{{title1}}</a></h5>
-						<h5><a href="{{paper2}}" target="_blank">{{title2}}</a></h5>
+						<h3 class="card-title" style="align:left"><b><a href="{{website}}" >{{name}}</a></b><span style="float: right;">{{usage}}</span></h3>
+						<h5>{{cite1}} <a href="{{paper1}}" >{{title1}}</a></h5>
+						<h5>{{cite2}} <a href="{{paper2}}" >{{title2}}</a></h5>
 					</div>
 				</div>
 				<br>
